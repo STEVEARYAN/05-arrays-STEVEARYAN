@@ -3,6 +3,8 @@
 
 
 
+int isprime(int);
+
 int factors(int n, int ret[])
 {  int p=0;
     while(n!=1)
