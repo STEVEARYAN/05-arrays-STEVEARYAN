@@ -74,7 +74,6 @@ for (i = 2; i <= n / 2; ++i) {
 
 
 
-
 int mode(int x[], int n)
 {   int p[20]={0};
     int count;
