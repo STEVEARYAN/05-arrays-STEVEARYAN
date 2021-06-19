@@ -15,18 +15,4 @@ int main(void) {
   }
   
   
-  int max(int marks[], int n){
- 
-  int maximum;
-     /**n=get_int("no of integer");
-     **/
-     maximum=marks[0];
-     for (int i=0;i<n;i++){
-        /** marks[i]=get_int("\n enter mark");**/
-          if(marks[i]>maximum){
-             maximum=marks[i];
-             }
-             
-             }
-         return maximum;
-      }
+  
