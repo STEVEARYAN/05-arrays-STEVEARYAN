@@ -2,6 +2,47 @@
 #include <stdio.h>
 int isprime(int);
 
+
+
+float average(int a[],int n){
+  float sum=o,average;
+  for (int i=0;i<n;i++){
+    sum=sum+a[i];
+  }
+  average=sum/n;
+  return average;
+}
+
+
+int min(int a[], int n){
+ int minimum;
+minimum=a[0];
+for (int i=0;i<n;i++){
+    if (a[i]<minimum){
+      minimum=a[i];
+    }
+}
+return minimum;
+}
+
+
+int max(int marks[], int n){
+ 
+int maximum;
+maximum=marks[0];
+   for (int i=0;i<n;i++){
+        /* marks[i]=get_int("\n enter mark");*/
+        if(marks[i]>maximum){
+             maximum=marks[i];
+             }
+             
+             }
+         return maximum;
+      }
+
+
+
+
 int factors(int n, int ret[])
 {  int p=0;
     while(n!=1)
@@ -36,26 +77,6 @@ for (i = 2; i <= n / 2; ++i) {
 
 
 
-
-
-int max(int marks[], int n){
- 
-int maximum;
-     /**n=get_int("no of integer");
-     **/
-maximum=marks[0];
-   for (int i=0;i<n;i++){
-        /* marks[i]=get_int("\n enter mark");*/
-        if(marks[i]>maximum){
-             maximum=marks[i];
-             }
-             
-             }
-         return maximum;
-      }
-
-
-
 int mode(int x[], int n)
 {   int p[20]={0};
     int count;
@@ -78,28 +99,4 @@ int mode(int x[], int n)
        }
     }
  return x[index];
-}
-
-
-int min(int a[], int n){
- int minimum;
-minimum=a[0];
-for (int i=0;i<n;i++){
-    if (a[i]<minimum){
-      minimum=a[i];
-    }
-}
-return minimum;
-}
-
-
-
-
- float average(int a[],int n){
-  float sum=o,average;
-  for (int i=0;i<n;i++){
-    sum=sum+a[i];
-  }
-  average=sum/n;
-  return average;
 }
