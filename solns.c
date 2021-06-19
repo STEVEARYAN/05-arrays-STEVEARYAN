@@ -1,8 +1,5 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
-
-
-
 int isprime(int);
 
 int factors(int n, int ret[])
@@ -43,13 +40,13 @@ for (i = 2; i <= n / 2; ++i) {
 
 int max(int marks[], int n){
  
-  int maximum;
+int maximum;
      /**n=get_int("no of integer");
      **/
-     maximum=marks[0];
-     for (int i=0;i<n;i++){
+maximum=marks[0];
+   for (int i=0;i<n;i++){
         /* marks[i]=get_int("\n enter mark");*/
-          if(marks[i]>maximum){
+        if(marks[i]>maximum){
              maximum=marks[i];
              }
              
