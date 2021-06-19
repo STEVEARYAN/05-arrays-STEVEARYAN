@@ -1,45 +1,42 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 int isprime(int);
-
-
-
-float average(int a[],int n){
-  float sum=o,average;
-  for (int i=0;i<n;i++){
-    sum=sum+a[i];
-  }
-  average=sum/n;
-  return average;
+float average(int p[], int n )
+{  float s=0.0;
+   for(int i=0;i<n;i++)
+   {
+       s+=p[i];
+   }
+   float x=s/n;
+   return x;
 }
 
 
-int min(int a[], int n){
- int minimum;
-minimum=a[0];
-for (int i=0;i<n;i++){
-    if (a[i]<minimum){
-      minimum=a[i];
+int min(int p[], int n)
+{   int m=p[0];
+    for(int i=1;i<n;i++)
+    {
+        if(p[i]<m)
+        {
+            m=p[i];
+        }
     }
+    return m;
 }
-return minimum;
+
+
+
+int max(int p[], int n)
+{   int m=p[0];
+    for(int i=1;i<n;i++)
+    {
+        if(p[i]>m)
+        {
+            m=p[i];
+        }
+    }
+    return m;
 }
-
-
-int max(int marks[], int n){
- 
-int maximum;
-maximum=marks[0];
-   for (int i=0;i<n;i++){
-        /* marks[i]=get_int("\n enter mark");*/
-        if(marks[i]>maximum){
-             maximum=marks[i];
-             }
-             
-             }
-         return maximum;
-      }
-
 
 
 
@@ -74,6 +71,7 @@ for (i = 2; i <= n / 2; ++i) {
   }
  return flag;
 }
+
 
 
 
